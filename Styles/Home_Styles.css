@@ -1,0 +1,101 @@
+/* home variables */
+:root {
+    --reelEmbedHeightDefault: 800px;
+}
+
+
+
+/* home content styles ------------------------------ */
+.mainHome {
+    display: flex;
+    height: var(--mainContentFillRemaining);
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 100%;
+}
+.mainColumnRight{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+.reelEmbed {
+    box-sizing: border-box;
+    display: flex;
+    height: var(--reelEmbedHeightDefault);
+    width: calc(var(--reelEmbedHeightDefault) * 1.7777778);
+    border-radius: 20px;
+
+}
+/* home responive styles */
+@media  screen and (max-width: 1650px) {
+    .reelEmbed {
+        height: calc(var(--reelEmbedHeightDefault) - 50px);
+        width: calc(calc(var(--reelEmbedHeightDefault) - 50px) * 1.7777778);
+    }
+}
+@media  screen and (max-width: 1450px) {
+    .mainHome {
+        flex-direction: column;
+    }
+    .mainColumnLeft {
+        width: 100%;
+    }
+    .reelEmbed {
+        height: calc(var(--reelEmbedHeightDefault) - 200px);
+        width: calc(calc(var(--reelEmbedHeightDefault) - 200px) * 1.7777778);
+    }
+    .reelBannerContainer {
+        flex-direction: column;
+        margin: 0;
+    }
+    .reelPointerText {
+        margin-top: 100px;
+        /* font-size: 3em; */
+    }
+    .reelPointer{
+        display: none;
+    }
+    .reelPointerVertical {
+        display: flex;
+        width: 60px;
+        height: 60px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .mainHome {
+        flex-direction: column;
+    }
+    .mainColumnLeft {
+        width: 100%;
+    }
+    .mainColumnRight {
+        width: 100%;
+        align-items: baseline;
+    }
+    .reelPointerText {
+        margin-top: 100px;
+        /* font-size: 2em; */
+    }
+    .reelPointer{
+        display: none;
+    }
+    .reelPointerVertical {
+        display: flex;
+        width: 60px;
+        height: 60px;
+    }
+    .reelBannerContainer {
+        flex-direction: column;
+        margin: 0;
+    }
+    .reelEmbed {
+        width: 100vw;
+        height: calc(100vw / 1.77778);
+        margin-top: 80px;
+    }
+
+}
