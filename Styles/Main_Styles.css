@@ -4,7 +4,7 @@
     --mainContentFillRemaining: calc(100vh - var(--headerHeightDesktop));
     --primaryColour: #FAF9F6;
     --backgroundColour: #121212;
-    --accentColour: #df1f1f;
+    --accentColour: #22A7F0;
 }
 
 
@@ -56,7 +56,7 @@ a {
     justify-content: left;
     white-space: nowrap;
     font-family: "Special Gothic Expanded One", sans-serif;
-    font-size: clamp(1.3rem, 4vw, 2.5rem);
+    font-size: clamp(1.4rem, 4vw, 2.5rem);
     font-weight: bold;
 }
 .headerName:hover {
@@ -66,7 +66,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(1.2rem, 2.4vw, 1.2rem);
+    font-size: clamp(1rem, 2.4vw, 1.2rem);
     font-weight: bold;
     transition: background-color 0.2s, color 0.2s;
     padding-left: 1vw;
@@ -169,11 +169,10 @@ a {
     fill: white;
     padding-left: 2vh;
     padding-right: 2vh;
-    transition: transform 0.2s, fill 0.2s;
+    transition: fill 0.2s;
     margin: 0;
 }
 .footerQuickLink:hover {
-    transform: scale(1.1,1.1);
     fill: var(--accentColour);
 }
 .copyrightInfo {
