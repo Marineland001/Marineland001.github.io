@@ -58,14 +58,14 @@
 .getInTouch {
     border: none;
     color: var(--textColour);
-    background-color: #128aca;
-    border: 2px solid #128aca;
+    background-color: rgb(255, 0, 51);
+    border: 2px solid rgb(255, 0, 51);
     transition: background-color 0.2s, border 0.2s;
 }
 .getInTouch:hover {
-    background-color: #0f73a8;
+    background-color: var(--accentHoverColour);
     color: var(--textColour);
-    border: 2px solid #0f73a8;
+    border: 2px solid var(--accentHoverColour);
 }
 .reelEmbed {
     box-sizing: border-box;

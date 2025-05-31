@@ -5,7 +5,8 @@
     --textColour: #fcfcfb ;
     --primaryColour: rgb(22, 22, 22);
     --backgroundColour: #121212;
-    --accentColour: #22A7F0;
+    --accentColour: rgb(255, 0, 51);
+    --accentHoverColour: rgb(214, 0, 43);
 }
 
 
@@ -55,9 +56,11 @@ a {
     font-family: "Special Gothic Expanded One", sans-serif;
     font-size: clamp(1.4rem, 4vw, 2.5rem);
     font-weight: bold;
+    transition: color 0.2s;
 }
 .headerName:hover {
     cursor: pointer;
+    color: var(--accentColour);
 }
 .navLink {
     display: flex;
@@ -154,7 +157,7 @@ a {
 }
 .footerEmailText {
     box-sizing: border-box;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 1.5vh;
     margin-bottom: 1.5vh;
     margin-right: 20px;
@@ -168,8 +171,8 @@ a {
     margin-right: 20px;
 }
 .footerQuickLink {
-    width:30px;
-    height: 30px;
+    width:35px;
+    height: 35px;
     fill: white;
     padding-left: 20px;
     padding-right: 20px;
@@ -193,6 +196,7 @@ a {
 .footerButton:hover {
     background-color: var(--textColour);
     color: var(--primaryColour);
+    cursor: pointer;
 }
 .footerButton:hover > svg {
     background-color: var(--textColour);
@@ -201,8 +205,8 @@ a {
 }
 .clipboardIcon {
     fill: var(--textColour);
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
 .footerQuickLink:hover {
     fill: var(--accentColour);
@@ -212,7 +216,7 @@ a {
     box-sizing: border-box;
     justify-content: center;
     color: rgb(185, 185, 185);
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-top: 35px;
     margin-bottom: 15px;
 }

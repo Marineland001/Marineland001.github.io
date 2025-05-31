@@ -6,7 +6,7 @@
 /* contact content styles ------------------------------ */
 .mainContact {
     display: flex;
-    height: var(--mainContentFillRemaining);
+    height: 100vh;
     box-sizing: border-box;
     padding: 0 2% 0;
     width: 100%;
@@ -32,12 +32,13 @@
     box-sizing: content-box;
     border: none;
     border-radius: 5px;
-    background-color: #128aca;
+    background-color: var(--accentColour);
     color: var(--textColour);
+    transition: background-color 0.2s;
 }
 .contactEmailButton:hover {
     cursor: pointer;
-    background-color: #0f73a8;
+    background-color: var(--accentHoverColour);
     color: var(--textColour);
 }
 .contactEmailText {
