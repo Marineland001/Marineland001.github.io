@@ -11,45 +11,103 @@
     padding: 0 2% 0;
     width: 100%;
     justify-content: center;
+    background-color: var(--primaryColour);
 }
 .contactColumn {
     display: flex;
+    flex-direction: column;
     box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+.contactEmailButton {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    height: 100%;
-
+    font-size: 1.3rem;
+    font-family: Inter, sans-serif;
+    padding: 0.8vw;
+    width: 15vw;
+    margin-bottom: 2vh;
+    box-sizing: content-box;
+    border: none;
+    border-radius: 5px;
+    background-color: #128aca;
+    color: var(--textColour);
 }
-.contactEmail {
-    font-size: clamp(2em, 3vw, 3em);
+.contactEmailButton:hover {
+    cursor: pointer;
+    background-color: #0f73a8;
+    color: var(--textColour);
+}
+.contactEmailText {
+    margin-right: 15px;
+}
+.contactEmailTextAlt{
+    display: none;
+    margin-right: 15px;
 }
 .contactLink {
     display: flex;
-    flex: 25%; 
     justify-content: center;
     align-items: center;
-    font-size: 2em;
-    font-weight: bold;
-    color: white;
-    transition: color 0.2s, background-color 0.2s;
+    font-size: 1.3rem;
+    color: var(--textColour);
+    padding: 0.8vw;
+    width: 15vw;
+    margin-top: 2vh;
+}
+.contactEmail {
+    margin-bottom: 0.5vh;
 }
 .contactLink {
-    width: 80px;
-    height: 80px;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.2s, background-color 0.2s;
+    border: 2px solid var(--textColour);
+    border-radius: 5px;
+}
+.contactLink {
     fill: white;
-    padding: 40px;
-    transition: transform 0.2s;
+    transition: background-color 0.2s, color 0.2s;
 }
 .contactLink:hover {
-    transform: scale(1.2,1.2);
+    background-color: var(--textColour);
+    color: var(--primaryColour);
 }
 /* contact content responsive styles */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1600px) {
+    .contactEmail, .contactLink, .contactEmailButton {
+        padding: 1.2vw;
+        width: 20vw;
+    }
+}
+@media screen and (max-width: 1450px) {
+    .contactEmail, .contactLink, .contactEmailButton {
+        padding: 1,5vw;
+        width: 25vw;
+    }
+}
+@media screen and (max-width: 1175px) {
+    .contactEmail, .contactLink, .contactEmailButton {
+        padding: 1,7vw;
+        width: 30vw;
+    }
+}
+@media screen and (max-width: 950px) {
     .contactColumn {
         flex-direction: column;
     }
-    .contactEmail {
-        margin-bottom: 30px;
+    .contactEmailText {
+        display: none;
+    }
+    .contactEmailTextAlt {
+        display: flex;
+    }
+    .contactEmail, .contactLink, .contactEmailButton {
+        padding: 3vw;
+        width: 45vw;
     }
 }

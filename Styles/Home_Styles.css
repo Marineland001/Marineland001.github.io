@@ -22,49 +22,50 @@
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
-    margin-top: 4vw;
-    margin-bottom: 4vw;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
 }
 .mainColumnLeft {
     display: flex;
     flex-basis: 70%;
     justify-content: center;
     align-items: center;
-    margin-top: 4vw;
+    margin-bottom: 8vh;
 }
 .landingPageLink {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: 15%;
-    font-size: clamp(1.5rem, 2vw, 2rem);
-    font-weight: bold;
+    flex-basis: 10%;
+    font-size: clamp(1.2rem, 2vw, 1.3rem);
+    font-weight: 600;
     border-radius: 5px;
-    margin-left: 1.3vw;
+    margin-left: 1.4vw;
     margin-right: 1.4vw;
-    background-color: var(--backgroundColour);
-    padding: 1vh;
+    border: 2px solid var(--textColour);
+    color: var(--textColour);
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
+    padding-right: 1vh;
+    padding-left: 1vh;
     font-family: inter;
     transition: background-color 0.2s, color 0.2s;
 }
 .landingPageLink:hover {
-    color: var(--accentColour);
+    background-color: var(--textColour);
+    color: var(--backgroundColour);
 }
 .getInTouch {
-    animation-name: getInTouchAnimation;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    border: none;
+    color: var(--textColour);
+    background-color: #128aca;
+    border: 2px solid #128aca;
+    transition: background-color 0.2s, border 0.2s;
 }
-@keyframes getInTouchAnimation {
-    0% {
-        color: var(--primaryColour);
-    }
-    50% {
-        color: var(--accentColour);
-    }
-    100% {
-        color: var(--primaryColour);
-    }
+.getInTouch:hover {
+    background-color: #0f73a8;
+    color: var(--textColour);
+    border: 2px solid #0f73a8;
 }
 .reelEmbed {
     box-sizing: border-box;
