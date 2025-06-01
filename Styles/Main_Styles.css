@@ -54,18 +54,18 @@ a {
     justify-content: left;
     white-space: nowrap;
     font-family: "Special Gothic Expanded One", sans-serif;
-    font-size: clamp(1.4rem, 4vw, 2.5rem);
+    font-size: 2.5rem;
     font-weight: bold;
     transition: color 0.2s;
 }
 .headerNameAlt {
-    display: flex;
+    display: none;
     flex: 30%;
     align-items: center;
     justify-content: left;
     white-space: nowrap;
     font-family: "Special Gothic Expanded One", sans-serif;
-    font-size: clamp(1.4rem, 4vw, 2.5rem);
+    font-size: clamp(2rem, 4vw, 2.5rem);
     font-weight: bold;
     transition: color 0.2s;
 }
@@ -77,7 +77,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(1rem, 2.4vw, 1.2rem);
+    font-size: 1.2rem;
     font-weight: bold;
     transition: background-color 0.2s, color 0.2s;
     padding-left: 1vw;
@@ -112,12 +112,6 @@ a {
     }
 }
 @media  screen and (max-width: 1000px) {
-    .headerColumnRight {
-        flex: 50%;
-        margin-top: 1vh;
-        margin-bottom: 1vh;
-        justify-content: center;
-    }
     .headerColumnLeft {
         flex: 50%
     }
@@ -127,28 +121,16 @@ a {
     }
     .headerNameAlt {
         display: flex;
+        margin-top: 0.5vh;
+        margin-bottom: 0.5vh;
     }
     .headerContactRow {
         justify-content: space-evenly;
     }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 300px) {
     .header {
         flex-direction: column;
-    }
-    .headerColumnLeft {
-        align-items: center;
-    }
-    .headerContactRow {
-        flex-direction: column;
-    }
-    .headerContactLink {
-        font-size: 1.2em;
-        margin-bottom: 5px;
-    }
-    .headerContactIcon {
-        width: 20px;
-        height: 20px;
     }
 }
 /* footer styles ------------------------------ */

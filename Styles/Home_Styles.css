@@ -85,6 +85,11 @@
         flex-direction: column;
     }
 }
+@media  screen and (max-width: 1000px) {
+    .reelEmbed {
+        height: 50vh;
+    }
+}
 @media screen and (max-width: 650px) {
     .mainHome {
         flex-direction: column;
@@ -92,10 +97,14 @@
     .mainColumnLeft {
         width: 100%;
         flex-direction: column;
+        margin-bottom: 10vh;
     }
     .mainColumnRight {
         width: 100%;
         align-items: baseline;
+    }
+    .reelEmbed {
+        height: 30vh;
     }
     .landingPageLink {
         width: 60%;
