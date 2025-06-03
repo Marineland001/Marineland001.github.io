@@ -3,9 +3,9 @@
     --headerHeightDesktop: 60px;
     --mainContentFillRemaining: calc(100vh - var(--headerHeightDesktop));
     --textColour: #fcfcfb ;
-    --primaryColour: rgb(22, 22, 22);
+    --primaryColour: #161616;
     --backgroundColour: #121212;
-    --accentColour: rgb(255, 0, 51);
+    --accentColour: #ff0033;
     --accentHoverColour: rgb(214, 0, 43);
 }
 
